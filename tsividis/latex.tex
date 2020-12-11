@@ -35,5 +35,20 @@
   \end{center}
 \end{framed}
 
+\vspace{4em}
+
+
+\begin{framed}
+  \begin{center}
+    \begin{dspBlocks}{1.5}{0.5}
+      $x(t)$~~ & \BDsamplerFramed[0.45em]  & \BDadd & ~~$\hat{x}[n]$ \\
+               &                           & \raisebox{-12pt}{$e[n]$}
+      \psset{arrows=->,linewidth=1.5pt}
+      \ncline{1,1}{1,2} \ncline{1,2}{1,3}^{$x[n]$}\ncline{1,3}{1,4}
+      \ncline{2,3}{1,3}
+    \end{dspBlocks}
+  \end{center}
+\end{framed}
+
 
 \end{document}
